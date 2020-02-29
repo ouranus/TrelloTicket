@@ -1,15 +1,12 @@
 from __future__ import print_function
 from pprint import pprint
 import os
-from gmail_class import gmail
+from github_class import g
 from trello_class import tllo as t
 
 def main():
-	g = gmail()
-	t
-	service = g.config_gmail()
+	t = tllo();
 	client = t.config_trello()
-	trello_data = g.inboxMailData(service)
 	if trello_data is not None:
 		atendimento = client.get_board('5d30b255dea9ed86b364e96b')
 		inbox = atendimento.all_lists()[0]
