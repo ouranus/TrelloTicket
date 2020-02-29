@@ -6,7 +6,6 @@ import os
 def main():
 	# First create a Github instance:
 	# using username and password
-	g = Github("ouranus", "balada66")
 
 	# or using an access token
 	g = Github("ac44d1f39fea30e606dce90b3532ce6102a7e470")
